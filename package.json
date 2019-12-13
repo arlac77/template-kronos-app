@@ -27,6 +27,7 @@
     "@rollup/plugin-json": "--delete--",
 
     "acorn-class-fields": "https://github.com/arlac77/acorn-class-fields.git",
+    "npm-pkgbuild": "^6.11.0",
     "documentation": "^12.1.4",
     "markdown-doctest": "^1.0.0",
     "ava": "^2.4.0",
