@@ -12,7 +12,6 @@ import { name, version, description, main, module, bin } from "./package.json";
 
 const external = [...builtins, "koa", "bufferutil", "utf-8-validate"];
 
-const extensions = ["js", "mjs", "jsx", "tag"];
 const plugins = [
   consts({
     name,
@@ -23,7 +22,7 @@ const plugins = [
   resolve(),
   native(),
   cleanup({
-    extensions
+    extensions: ["js", "mjs"]
   })
 ];
 
