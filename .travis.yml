@@ -11,7 +11,8 @@ jobs:
       node_js:
         - -10
         - -12
-        - 12.13.1
+        - -13
+        - 13.13.0
       script:
         - npm run cover
         - npx codecov
@@ -30,13 +31,3 @@ jobs:
         skip_cleanup: "true"
         script:
           - npx semantic-release
-
-node_js:
-  - -10
-  - -11
-  - -12
-cache: --delete-- npm
-script:
-  - -npm run cover
-  - -npx codecov
-  - -cat ./build/coverage/lcov.info | npx coveralls
