@@ -1,0 +1,232 @@
+{
+  "name": "{{name}}",
+  "version": "0.0.0-semantic-release",
+  "description": "{{description}}",
+  "module": "{{module}}",
+  "main": "{{main}}",
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "bin"
+  ],
+  "keywords": [],
+  "scripts": {
+    "cover": "#overwrite c8 -x 'tests/**/*' --temp-directory build/tmp ava && c8 report -r lcov -o build/coverage --temp-directory build/tmp",
+    "test": "ava",
+    "posttest": "npm run prepare && markdown-doctest",
+    "prepare": "rollup -c",
+    "docs": "documentation readme {{module}} --section=API",
+    "lint": "documentation lint {{module}}"
+  },
+  "dependencies": {
+    "commander": "^4.0.1",
+    "@kronos-integration/service": "^8.1.7"
+  },
+  "devDependencies": {
+    "@rollup/plugin-json": "--delete--",
+
+    "acorn-class-fields": "https://github.com/arlac77/acorn-class-fields.git",
+    "documentation": "^12.1.4",
+    "markdown-doctest": "^1.0.0",
+    "ava": "^2.4.0",
+    "c8": "^6.0.1",
+    "esm": "^3.2.25",
+    "rollup": "^1.27.12",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-cleanup": "^3.1.1",
+    "rollup-plugin-babel": "^4.3.1",
+    "rollup-plugin-executable": "^1.5.2",
+    "@rollup/plugin-node-resolve": "^6.0.0",
+    "builtin-modules": "^3.1.0",
+    "semantic-release": "^15.13.31"
+  },
+  "optionalDependencies": {
+    "@kronos-integration/service-systemd": "^2.2.0"
+  },
+  "contributors": [
+    {
+      "name": "Markus Felten",
+      "email": "markus.felten@gmx.de"
+    }
+  ],
+  "license": "BSD-2-Clause",
+  "engines": {
+    "node": ">=12.13.1"
+  },
+  "pacman": {
+    "arch": [
+      "aarch64",
+      "armv7h",
+      "x86_64"
+    ],
+    "hooks": "pacman/hooks.sh",
+    "backup": "etc/${name}/config.json",
+    "depends": {
+      "systemd": ">=244"
+    },
+    "installdir": "/services/${name}",
+    "additional-content": [
+      "npm-dist",
+      "npm-dependencies"
+    ],
+    "content": {
+      "/usr/lib/tmpfiles.d/${name}.conf": "pacman/tmpfiles.conf",
+      "/etc/${name}/config.json": "config/config.json"
+    }
+  },
+  "release": {
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      [
+        "@semantic-release/exec",
+        {
+          "publishCmd": "npx npm-pkgbuild --pkgver ${nextRelease.version} --npm-dist --npm-modules pkgbuild pacman makepkg"
+        }
+      ]
+    ]
+  },
+  "ava": {
+    "require": [
+      "esm"
+    ],
+    "extensions": [
+      "mjs"
+    ],
+    "babel": false,
+    "compileEnhancements": false,
+    "files": [
+      "tests/*-test.mjs"
+    ]
+  },
+  "template": {
+    "inheritFrom": "arlac77/npm-package-template-root",
+    "files": [
+      {
+        "merger": "Package",
+        "pattern": "**/package.json",
+        "options": {
+          "keywords": {
+            "svelte": "svelte",
+            "auth-provider": "auth-provider",
+            "repository-provider.+": "repository-provider",
+            "^kronos-interceptor.+": "kronos-interceptor",
+            "^kronos-service-(?!manager)": "kronos-service",
+            "^kronos-step.+": "kronos-step",
+            "^kronos-adapter.+": "kronos-step"
+          },
+          "actions": [
+            {
+              "path": "$.ava.require",
+              "op": "replace"
+            },
+            {
+              "path": "$.ava.files",
+              "op": "replace"
+            },
+            {
+              "path": "$.ava.extensions",
+              "op": "replace"
+            },
+            {
+              "path": "$.ava.babel",
+              "op": "replace"
+            },
+            {
+              "path": "$.ava.compileEnhancements",
+              "op": "replace"
+            }
+          ]
+        }
+      },
+      {
+        "merger": "Travis",
+        "pattern": ".travis.yml"
+      },
+      {
+        "merger": "Readme",
+        "pattern": "README.md",
+        "options": {
+          "badges": [
+            {
+              "name": "npm",
+              "icon": "https://img.shields.io/npm/v/{{name}}.svg",
+              "url": "https://www.npmjs.com/package/{{name}}"
+            },
+            {
+              "name": "Greenkeeper",
+              "icon": "https://badges.greenkeeper.io/{{github.user}}/{{github.repo}}.svg",
+              "url": "https://greenkeeper.io/"
+            },
+            {
+              "name": "semantic-release",
+              "icon": "https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg",
+              "url": "https://github.com/{{github.user}}/{{github.repo}}"
+            },
+            {
+              "name": "styled with prettier",
+              "icon": "https://img.shields.io/badge/styled_with-prettier-ff69b4.svg",
+              "url": "https://github.com/prettier/prettier"
+            },
+            {
+              "name": "Build Status",
+              "icon": "https://secure.travis-ci.org/{{github.user}}/{{github.repo}}.png",
+              "url": "http://travis-ci.org/{{github.user}}/{{github.repo}}"
+            },
+            {
+              "name": "install size",
+              "icon": "https://packagephobia.now.sh/badge?p={{name}}/@{{version}}",
+              "url": "https://packagephobia.now.sh/result?p={{name}}@{{version}}"
+            },
+            {
+              "name": "codecov.io",
+              "icon": "http://codecov.io/github/{{github.user}}/{{github.repo}}/coverage.svg?branch=master",
+              "url": "http://codecov.io/github/{{github.user}}/{{github.repo}}?branch=master"
+            },
+            {
+              "name": "Coverage Status",
+              "icon": "https://coveralls.io/repos/{{github.user}}/{{github.repo}}/badge.svg",
+              "url": "https://coveralls.io/r/{{github.user}}/{{github.repo}}"
+            },
+            {
+              "name": "Maintainability",
+              "icon": "https://api.codeclimate.com/v1/badges/{{id}}/maintainability",
+              "url": "https://codeclimate.com/github/{{github.user}}/{{github.repo}}/maintainability"
+            },
+            {
+              "name": "Known Vulnerabilities",
+              "icon": "https://snyk.io/test/github/{{github.user}}/{{github.repo}}/badge.svg",
+              "url": "https://snyk.io/test/github/{{github.user}}/{{github.repo}}"
+            },
+            {
+              "name": "GitHub Issues",
+              "icon": "https://img.shields.io/github/issues/{{github.user}}/{{github.repo}}.svg?style=flat-square",
+              "url": "https://github.com/{{github.user}}/{{github.repo}}/issues"
+            },
+            {
+              "name": "downloads",
+              "icon": "http://img.shields.io/npm/dm/{{github.repo}}.svg?style=flat-square",
+              "url": "https://npmjs.org/package/{{github.repo}}"
+            },
+            {
+              "name": "Commitizen friendly",
+              "icon": "https://img.shields.io/badge/commitizen-friendly-brightgreen.svg",
+              "url": "http://commitizen.github.io/cz-cli/"
+            }
+          ]
+        }
+      },
+      {
+        "merger": "Rollup",
+        "pattern": "**/rollup.config.js"
+      }
+    ],
+    "usedBy": [
+      "Kronos-Integration/kronos-cluster-node",
+      "arlac77/entitlement-provider",
+      "arlac77/component-manager",
+      "arlac77/system-dashboard"
+    ]
+  }
+}
