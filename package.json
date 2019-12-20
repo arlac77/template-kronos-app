@@ -33,6 +33,8 @@
     "commander": "^4.0.1"
   },
   "devDependencies": {
+    "npm-gkpbuild": "--delete--",
+
     "@rollup/plugin-json": "--delete--",
     "markdown-doctest": "--delete--",
     "acorn-class-fields": "https://github.com/arlac77/acorn-class-fields.git",
