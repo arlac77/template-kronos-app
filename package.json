@@ -74,6 +74,9 @@
     "arm64",
     "x64"
   ],
+  "config": {
+    "socket": "/run/${name}/http/socket"
+  },
   "pacman": {
     "arch": [
       "aarch64",
