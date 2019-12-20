@@ -62,7 +62,7 @@
   ],
   "license": "BSD-2-Clause",
   "engines": {
-    "node": ">=13.4.0"
+    "node": ">=13.5.0"
   },
   "os": [
     "linux",
