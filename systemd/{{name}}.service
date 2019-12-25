@@ -19,7 +19,5 @@ ConfigurationDirectory={{name}}
 NotifyAccess=all
 FileDescriptorStoreMax=2
 
-Environment="LOGLEVEL=trace"
-
 [Install]
 WantedBy=multi-user.target
