@@ -14,7 +14,9 @@
     "{{name}}": "bin/{{name}}",
     "{{name}}-systemd": "bin/{{name}}-systemd"
   },
-  "keywords": ["kronos-integration"],
+  "keywords": [
+    "kronos-integration"
+  ],
   "scripts": {
     "cover": "#overwrite c8 -x 'tests/**/*' --temp-directory build/tmp ava && c8 report -r lcov -o build/coverage --temp-directory build/tmp",
     "test": "ava",
@@ -36,7 +38,6 @@
     "rollup-plugin-commonjs": "--delete--",
     "@rollup/plugin-json": "--delete--",
     "markdown-doctest": "--delete--",
-
     "acorn-class-fields": "https://github.com/arlac77/acorn-class-fields.git",
     "npm-pkgbuild": "^6.11.2",
     "documentation": "^12.1.4",
@@ -186,8 +187,9 @@
     ],
     "usedBy": [
       "Kronos-Integration/kronos-cluster-node",
-      "arlac77/entitlement-provider",
       "arlac77/component-manager",
+      "arlac77/entitlement-provider",
+      "arlac77/rtsp-archive",
       "arlac77/system-dashboard"
     ]
   }
