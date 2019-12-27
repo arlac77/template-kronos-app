@@ -134,10 +134,6 @@
         "pattern": "**/package.json"
       },
       {
-        "merger": "TOML",
-        "pattern": "**/*.service"
-      },
-      {
         "merger": "Travis",
         "pattern": ".travis.yml"
       },
