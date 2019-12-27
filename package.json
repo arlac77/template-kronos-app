@@ -134,6 +134,10 @@
         "pattern": "**/package.json"
       },
       {
+        "merger": "INI",
+        "pattern": "**/*.service"
+      },
+      {
         "merger": "Travis",
         "pattern": ".travis.yml"
       },
