@@ -135,7 +135,17 @@
       },
       {
         "merger": "INI",
-        "pattern": "**/*.service"
+        "pattern": "**/*.service",
+        "options": {
+          "expand" : false
+        }
+      },
+      {
+        "merger": "INI",
+        "pattern": "**/*.socket",
+        "options": {
+          "expand" : false
+        }
       },
       {
         "merger": "Travis",
