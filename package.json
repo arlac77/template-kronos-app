@@ -188,8 +188,8 @@
             },
             {
               "name": "downloads",
-              "icon": "http://img.shields.io/npm/dm/{{github.repo}}.svg?style=flat-square",
-              "url": "https://npmjs.org/package/{{github.repo}}"
+              "icon": "http://img.shields.io/npm/dm/{{name}}.svg?style=flat-square",
+              "url": "https://npmjs.org/package/{{name}}"
             }
           ]
         }
