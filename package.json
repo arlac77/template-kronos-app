@@ -137,6 +137,7 @@
         "merger": "INI",
         "pattern": "**/*.service",
         "options": {
+          "messagePrefix": "fix(systemd):",
           "expand" : false
         }
       },
@@ -144,6 +145,7 @@
         "merger": "INI",
         "pattern": "**/*.socket",
         "options": {
+          "messagePrefix": "fix(systemd):",
           "expand" : false
         }
       },
