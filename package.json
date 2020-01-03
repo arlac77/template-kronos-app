@@ -89,7 +89,7 @@
     "backup": "etc/${name}/config.json",
     "depends": {
       "systemd": ">=244.1",
-      "nginx-mainline": ">=1.17.6"
+      "nginx-mainline": ">=1.17.7"
     },
     "installdir": "/services/${name}",
     "additional-content": [
