@@ -103,7 +103,8 @@
       "arlac77/npm-package-template-root",
       "arlac77/npm-package-template-travis",
       "arlac77/npm-package-template-rollup",
-      "arlac77/npm-package-template-ava"
+      "arlac77/npm-package-template-ava",
+      "arlac77/npm-package-template-pacman"
     ],
     "files": [
       {
