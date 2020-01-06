@@ -104,19 +104,6 @@
       ]
     ]
   },
-  "_ava": {
-    "require": [
-      "esm"
-    ],
-    "extensions": [
-      "mjs"
-    ],
-    "babel": false,
-    "compileEnhancements": false,
-    "files": [
-      "tests/*-test.mjs"
-    ]
-  },
   "template": {
     "inheritFrom": [
       "arlac77/npm-package-template-root",
