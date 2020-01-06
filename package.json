@@ -121,7 +121,8 @@
     "inheritFrom": [
       "arlac77/npm-package-template-root",
       "arlac77/npm-package-template-travis",
-      "arlac77/npm-package-template-rollup"
+      "arlac77/npm-package-template-rollup",
+      "arlac77/npm-package-template-ava"
     ],
     "files": [
       {
@@ -132,7 +133,7 @@
         "merger": "INI",
         "pattern": "**/*.service",
         "options": {
-          "messagePrefix": "fix(systemd):",
+          "messagePrefix": "fix(systemd): ",
           "expand": false
         }
       },
@@ -140,7 +141,7 @@
         "merger": "INI",
         "pattern": "**/*.socket",
         "options": {
-          "messagePrefix": "fix(systemd):",
+          "messagePrefix": "fix(systemd): ",
           "expand": false
         }
       },
