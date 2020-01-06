@@ -128,7 +128,8 @@
   "template": {
     "inheritFrom": [
       "arlac77/npm-package-template-root",
-      "arlac77/npm-package-template-travis"
+      "arlac77/npm-package-template-travis",
+      "arlac77/npm-package-template-rollup"
     ],
     "files": [
       {
@@ -188,10 +189,6 @@
             }
           ]
         }
-      },
-      {
-        "merger": "Rollup",
-        "pattern": "**/rollup.config.js"
       }
     ],
     "usedBy": [
