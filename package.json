@@ -34,11 +34,9 @@
     "@kronos-integration/service-ldap": "^2.1.14"
   },
   "devDependencies": {
-    "rollup-plugin-commonjs": "--delete--",
-    "@rollup/plugin-json": "--delete--",
     "markdown-doctest": "--delete--",
     "acorn-class-fields": "https://github.com/arlac77/acorn-class-fields.git",
-    "npm-pkgbuild": "^6.11.2",
+    "npm-pkgbuild": "^6.11.3",
     "documentation": "^12.1.4",
     "ava": "^2.4.0",
     "c8": "^7.0.0",
@@ -56,12 +54,6 @@
   "optionalDependencies": {
     "@kronos-integration/service-systemd": "^2.2.11"
   },
-  "contributors": [
-    {
-      "name": "Markus Felten",
-      "email": "markus.felten@gmx.de"
-    }
-  ],
   "license": "BSD-2-Clause",
   "engines": {
     "node": ">=13.5.0"
@@ -166,16 +158,6 @@
               "name": "install size",
               "icon": "https://packagephobia.now.sh/badge?p={{name}}/@{{version}}",
               "url": "https://packagephobia.now.sh/result?p={{name}}@{{version}}"
-            },
-            {
-              "name": "codecov.io",
-              "icon": "http://codecov.io/github/{{github.user}}/{{github.repo}}/coverage.svg?branch=master",
-              "url": "http://codecov.io/github/{{github.user}}/{{github.repo}}?branch=master"
-            },
-            {
-              "name": "Coverage Status",
-              "icon": "https://coveralls.io/repos/{{github.user}}/{{github.repo}}/badge.svg",
-              "url": "https://coveralls.io/r/{{github.user}}/{{github.repo}}"
             },
             {
               "name": "Known Vulnerabilities",
