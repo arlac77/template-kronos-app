@@ -33,7 +33,6 @@
   },
   "devDependencies": {
     "acorn-class-fields": "https://github.com/arlac77/acorn-class-fields.git",
-    "npm-pkgbuild": "^6.11.3",
     "documentation": "^12.1.4",
     "rollup": "^1.28.0",
     "rollup-plugin-consts": "^1.0.1",
