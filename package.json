@@ -1,12 +1,6 @@
 {
-  "name": "{{name}}",
-  "version": "0.0.0-semantic-release",
-  "description": "{{description}}",
   "module": "{{module}}",
   "main": "{{main}}",
-  "publishConfig": {
-    "access": "public"
-  },
   "files": [
     "bin/{{name}}-systemd"
   ],
@@ -34,13 +28,9 @@
   "devDependencies": {
     "acorn-class-fields": "https://github.com/arlac77/acorn-class-fields.git",
     "documentation": "^12.1.4",
-    "rollup": "^1.28.0",
-    "rollup-plugin-consts": "^1.0.1",
     "rollup-plugin-cleanup": "^3.1.1",
     "rollup-plugin-executable": "^1.5.2",
     "rollup-plugin-native": "^1.2.0",
-    "@rollup/plugin-node-resolve": "^6.1.0",
-    "@rollup/plugin-commonjs": "^11.0.1",
     "builtin-modules": "^3.1.0",
     "semantic-release": "^15.14.0"
   },
@@ -72,7 +62,6 @@
     "hooks": "pacman/hooks.sh",
     "backup": "etc/${name}/config.json",
     "depends": {
-      "systemd": ">=244.1",
       "nginx-mainline": ">=1.17.7"
     },
     "installdir": "/services/${name}",
@@ -103,28 +92,13 @@
       "arlac77/npm-package-template-travis",
       "arlac77/npm-package-template-rollup",
       "arlac77/npm-package-template-ava",
-      "arlac77/npm-package-template-pacman"
+      "arlac77/npm-package-template-pacman",
+      "arlac77/npm-package-template-systemd"
     ],
     "files": [
       {
         "merger": "Package",
         "pattern": "**/package.json"
-      },
-      {
-        "merger": "INI",
-        "pattern": "**/*.service",
-        "options": {
-          "messagePrefix": "fix(systemd): ",
-          "expand": false
-        }
-      },
-      {
-        "merger": "INI",
-        "pattern": "**/*.socket",
-        "options": {
-          "messagePrefix": "fix(systemd): ",
-          "expand": false
-        }
       },
       {
         "merger": "Readme",
