@@ -9,12 +9,10 @@
     "{{name}}-systemd": "bin/{{name}}-systemd"
   },
   "keywords": [
-    "kronos-integration","systemd"
+    "kronos-integration", "systemd"
   ],
   "scripts": {
-    "prepare": "rollup -c",
-    "docs": "documentation readme {{module}} --section=API",
-    "lint": "documentation lint {{module}}"
+    "prepare": "rollup -c"
   },
   "dependencies": {
     "commander": "--delete--",
@@ -26,13 +24,11 @@
     "@kronos-integration/service-ldap": "^2.1.14"
   },
   "devDependencies": {
-    "acorn-class-fields": "https://github.com/arlac77/acorn-class-fields.git",
-    "documentation": "^12.1.4"
+    "acorn-class-fields": "https://github.com/arlac77/acorn-class-fields.git"
   },
   "optionalDependencies": {
     "@kronos-integration/service-systemd": "^2.2.11"
   },
-  "license": "BSD-2-Clause",
   "engines": {
     "node": ">=13.6.0"
   },
@@ -87,6 +83,7 @@
       "arlac77/npm-package-template-travis",
       "arlac77/npm-package-template-rollup",
       "arlac77/npm-package-template-ava",
+      "arlac77/npm-package-template-documentation",
       "arlac77/npm-package-template-pacman",
       "arlac77/npm-package-template-systemd",
       "arlac77/npm-package-template-release"
@@ -102,19 +99,9 @@
         "options": {
           "badges": [
             {
-              "name": "styled with prettier",
-              "icon": "https://img.shields.io/badge/styled_with-prettier-ff69b4.svg",
-              "url": "https://github.com/prettier/prettier"
-            },
-            {
               "name": "install size",
               "icon": "https://packagephobia.now.sh/badge?p={{name}}/@{{version}}",
               "url": "https://packagephobia.now.sh/result?p={{name}}@{{version}}"
-            },
-            {
-              "name": "Known Vulnerabilities",
-              "icon": "https://snyk.io/test/github/{{github.user}}/{{github.repo}}/badge.svg",
-              "url": "https://snyk.io/test/github/{{github.user}}/{{github.repo}}"
             },
             {
               "name": "downloads",
