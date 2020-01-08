@@ -9,7 +9,7 @@
     "{{name}}-systemd": "bin/{{name}}-systemd"
   },
   "keywords": [
-    "kronos-integration"
+    "kronos-integration","systemd"
   ],
   "scripts": {
     "prepare": "rollup -c",
@@ -27,12 +27,7 @@
   },
   "devDependencies": {
     "acorn-class-fields": "https://github.com/arlac77/acorn-class-fields.git",
-    "documentation": "^12.1.4",
-    "rollup-plugin-cleanup": "^3.1.1",
-    "rollup-plugin-executable": "^1.5.2",
-    "rollup-plugin-native": "^1.2.0",
-    "builtin-modules": "^3.1.0",
-    "semantic-release": "^15.14.0"
+    "documentation": "^12.1.4"
   },
   "optionalDependencies": {
     "@kronos-integration/service-systemd": "^2.2.11"
@@ -93,7 +88,8 @@
       "arlac77/npm-package-template-rollup",
       "arlac77/npm-package-template-ava",
       "arlac77/npm-package-template-pacman",
-      "arlac77/npm-package-template-systemd"
+      "arlac77/npm-package-template-systemd",
+      "arlac77/npm-package-template-release"
     ],
     "files": [
       {
