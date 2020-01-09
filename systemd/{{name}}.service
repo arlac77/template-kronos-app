@@ -15,6 +15,7 @@ PrivateTmp=true
 NoNewPrivileges=true
 RuntimeDirectory={{name}}
 StateDirectory={{name}}
+CacheDirectory={{name}}
 ConfigurationDirectory={{name}}
 NotifyAccess=all
 FileDescriptorStoreMax=5
