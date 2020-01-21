@@ -26,5 +26,12 @@ MemoryMax=200M
 
 OOMPolicy=stop
 
+PrivateDevices=true
+ProtectControlGroups=true
+ProtectHome=true
+ProtectKernelTunables=true
+ProtectSystem=full
+RestrictSUIDSGID=true
+
 [Install]
 WantedBy=multi-user.target
