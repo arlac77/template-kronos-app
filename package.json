@@ -91,10 +91,6 @@
     ],
     "files": [
       {
-        "merger": "Package",
-        "pattern": "**/package.json"
-      },
-      {
         "merger": "Readme",
         "pattern": "README.md",
         "options": {
