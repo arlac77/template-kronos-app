@@ -9,7 +9,6 @@ jobs:
   include:
     - stage: test
       node_js:
-        - -10
         - -12
         - -13
         - 13.7.0
