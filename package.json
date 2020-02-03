@@ -98,11 +98,6 @@
               "name": "install size",
               "icon": "https://packagephobia.now.sh/badge?p={{name}}/@{{version}}",
               "url": "https://packagephobia.now.sh/result?p={{name}}@{{version}}"
-            },
-            {
-              "name": "downloads",
-              "icon": "http://img.shields.io/npm/dm/{{name}}.svg?style=flat-square",
-              "url": "https://npmjs.org/package/{{name}}"
             }
           ]
         }
