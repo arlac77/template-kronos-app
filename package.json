@@ -87,21 +87,6 @@
       "arlac77/npm-package-template-systemd",
       "arlac77/npm-package-template-release"
     ],
-    "files": [
-      {
-        "merger": "Readme",
-        "pattern": "README.md",
-        "options": {
-          "badges": [
-            {
-              "name": "install size",
-              "icon": "https://packagephobia.now.sh/badge?p={{name}}/@{{version}}",
-              "url": "https://packagephobia.now.sh/result?p={{name}}@{{version}}"
-            }
-          ]
-        }
-      }
-    ],
     "usedBy": [
       "Kronos-Integration/kronos-cluster-node",
       "arlac77/component-manager",
