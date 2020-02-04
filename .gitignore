@@ -1,7 +1,7 @@
-- out
-- package-lock.json
-- .nyc_output
-- coverage
+-out
+-package-lock.json
+-.nyc_output
+-coverage
 node_modules
 build
 dist
