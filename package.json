@@ -51,8 +51,7 @@
     "hooks": "pacman/hooks.sh",
     "backup": "etc/${name}/config.json",
     "depends": {
-      "nginx-mainline": ">=1.17.8",
-      "systemd": ">=244.2"
+      "nginx-mainline": ">=1.17.8"
     },
     "installdir": "/services/${name}",
     "additional-content": [
