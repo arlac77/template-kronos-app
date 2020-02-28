@@ -27,9 +27,6 @@
   "optionalDependencies": {
     "@kronos-integration/service-systemd": "^2.2.12"
   },
-  "engines": {
-    "node": ">=13.8.0"
-  },
   "os": [
     "linux",
     "darwin"
@@ -77,14 +74,14 @@
   },
   "template": {
     "inheritFrom": [
-      "arlac77/npm-package-template-root",
-      "arlac77/npm-package-template-travis",
-      "arlac77/npm-package-template-rollup",
-      "arlac77/npm-package-template-ava",
-      "arlac77/npm-package-template-documentation",
-      "arlac77/npm-package-template-pacman",
-      "arlac77/npm-package-template-systemd",
-      "arlac77/npm-package-template-release"
+      "arlac77/template-root",
+      "arlac77/template-travis",
+      "arlac77/template-rollup",
+      "arlac77/template-ava",
+      "arlac77/template-documentation",
+      "arlac77/template-pacman",
+      "arlac77/template-systemd",
+      "arlac77/template-release"
     ],
     "usedBy": [
       "Kronos-Integration/kronos-cluster-node",
@@ -92,6 +89,9 @@
       "arlac77/entitlement-provider",
       "arlac77/rtsp-archive",
       "arlac77/system-dashboard"
-    ]
+    ],
+    "properties": {
+      "node_version": "13.9.0"
+    }
   }
 }
