@@ -47,9 +47,6 @@
     ],
     "hooks": "pacman/hooks.sh",
     "backup": "etc/${name}/config.json",
-    "depends": {
-      "nginx-mainline": ">=1.17.8"
-    },
     "installdir": "/services/${name}",
     "additional-content": [
       "npm-dist",
@@ -80,6 +77,7 @@
       "arlac77/template-ava",
       "arlac77/template-documentation",
       "arlac77/template-pacman",
+      "arlac77/template-nginx",
       "arlac77/template-systemd",
       "arlac77/template-release"
     ],
