@@ -8,7 +8,8 @@
     "{{name}}-systemd": "bin/{{name}}-systemd"
   },
   "keywords": [
-    "kronos-integration", "systemd"
+    "kronos-integration",
+    "systemd"
   ],
   "scripts": {
     "prepare": "rollup -c"
@@ -86,6 +87,7 @@
       "arlac77/component-manager",
       "arlac77/entitlement-provider",
       "arlac77/rtsp-archive",
+      "arlac77/symatem-infrastructure",
       "arlac77/system-dashboard"
     ],
     "properties": {
