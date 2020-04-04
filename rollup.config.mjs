@@ -1,8 +1,6 @@
 import { readFileSync } from "fs";
-
 import resolve from "@rollup/plugin-node-resolve";
 import commonjs from "@rollup/plugin-commonjs";
-
 import executable from "rollup-plugin-executable";
 import native from "rollup-plugin-native";
 import cleanup from "rollup-plugin-cleanup";
