@@ -22,9 +22,6 @@
     "@kronos-integration/service-http": "^10.0.7",
     "@kronos-integration/service-ldap": "^2.1.17"
   },
-  "devDependencies": {
-    "acorn-class-fields": "--delete--"
-  },
   "optionalDependencies": {
     "@kronos-integration/service-systemd": "^2.2.12"
   },
