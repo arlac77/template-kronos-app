@@ -55,5 +55,5 @@ export default config.map((c) => {
     format: "cjs",
     ...c.output,
   };
-  return { acornInjectPlugins: [acornClassFields], plugins, external, ...c };
+  return { /*acornInjectPlugins: [acornClassFields],*/ plugins, external, ...c };
 });

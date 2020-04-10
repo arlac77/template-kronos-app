@@ -23,7 +23,7 @@
     "@kronos-integration/service-ldap": "^2.1.17"
   },
   "devDependencies": {
-    "acorn-class-fields": "https://github.com/arlac77/acorn-class-fields.git"
+    "acorn-class-fields": "--delete--"
   },
   "optionalDependencies": {
     "@kronos-integration/service-systemd": "^2.2.12"
