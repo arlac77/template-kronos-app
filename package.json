@@ -56,7 +56,7 @@
     "depends" : {
      "nginx-mainline": ">=1.17.9"
     },
-    "depends" : "--delete--"
+    "dependes" : "--delete--"
   },
   "release": {
     "plugins": [
