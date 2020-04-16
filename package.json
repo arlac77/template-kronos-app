@@ -53,10 +53,7 @@
       "/usr/lib/tmpfiles.d/${name}.conf": "pacman/tmpfiles.conf",
       "/etc/${name}/config.json": "config/config.json"
     },
-    "depends" : {
-     "nginx-mainline": ">=1.17.9"
-    },
-    "dependes" : "--delete--"
+    "dependes": "--delete--"
   },
   "release": {
     "plugins": [
