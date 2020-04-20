@@ -8,7 +8,9 @@
     "systemd"
   ],
   "scripts": {
-    "prepare": "--delete--"
+    "prepare": "--delete--",
+    "lint": "--delete--",
+    "docs": "--delete--"
   },
   "dependencies": {
     "@kronos-integration/service": "^8.3.23",
@@ -18,6 +20,7 @@
     "@kronos-integration/service-http": "^10.0.10",
     "@kronos-integration/service-ldap": "^2.1.21",
     
+    "documentation": "--delete--",
     "builtin-modules": "--delete--",
     "rollup": "--delete--",
     "@rollup/plugin-node-resolve": "--delete--",
@@ -82,7 +85,6 @@
       "arlac77/template-root",
       "arlac77/template-travis",
       "arlac77/template-ava",
-      "arlac77/template-documentation",
       "arlac77/template-pacman",
       "arlac77/template-nginx",
       "arlac77/template-systemd",
