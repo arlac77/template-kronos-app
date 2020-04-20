@@ -8,7 +8,7 @@
     "systemd"
   ],
   "scripts": {
-    "prepare": "rollup -c"
+    "prepare": "--delete--"
   },
   "dependencies": {
     "@kronos-integration/service": "^8.3.23",
@@ -16,7 +16,19 @@
     "@kronos-integration/service-authenticator": "^1.0.20",
     "@kronos-integration/service-health-check": "^5.0.20",
     "@kronos-integration/service-http": "^10.0.10",
-    "@kronos-integration/service-ldap": "^2.1.21"
+    "@kronos-integration/service-ldap": "^2.1.21",
+    
+    "builtin-modules": "--delete--",
+    "rollup": "--delete--",
+    "@rollup/plugin-node-resolve": "--delete--",
+    "@rollup/plugin-json": "--delete--",
+    "@rollup/plugin-commonjs": "--delete--",
+    "@rollup/plugin-typescript": "--delete--",
+    "rollup-plugin-executable": "--delete--",
+    "rollup-plugin-native": "--delete--",
+    "rollup-plugin-consts": "--delete--",
+    "rollup-plugin-cleanup": "--delete--",
+    "rollup-plugin-babel": "--delete--"
   },
   "optionalDependencies": {
     "@kronos-integration/service-systemd": "^2.3.0"
@@ -39,6 +51,7 @@
       "armv7h",
       "x86_64"
     ],
+    "group": "services",
     "hooks": "pacman/hooks.sh",
     "backup": "etc/${name}/config.json",
     "installdir": "/services/${name}",
