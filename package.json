@@ -1,7 +1,7 @@
 {
   "bin": {
-    "{{name}}": "src/{{name}}-cli.mjs",
-    "{{name}}-systemd": "bin/{{name}}-systemd-cli.mjs"
+    "{{name}}-systemd": "bin/{{name}}-systemd-cli.mjs",
+    "{{name}}": "src/{{name}}-cli.mjs"
   },
   "keywords": [
     "kronos-integration",
@@ -15,7 +15,7 @@
   "dependencies": {
     "@kronos-integration/service": "^8.3.23",
     "@kronos-integration/service-admin": "^3.0.19",
-    "@kronos-integration/service-authenticator": "^1.0.20",
+    "@kronos-integration/service-authenticator": "^1.0.21",
     "@kronos-integration/service-health-check": "^5.0.20",
     "@kronos-integration/service-http": "^10.0.10",
     "@kronos-integration/service-ldap": "^2.1.21",
