@@ -1,7 +1,15 @@
-import version from "consts:version";
-import description from "consts:description";
+import { readFileSync } from "fs";
+import { join, dirname } from "path";
+import { fileURLToPath } from "url";
 import { StandaloneServiceProvider } from "@kronos-integration/service";
 import { setup } from "./{{name}}.mjs";
+
+const { version, description } = JSON.parse(
+  readFileSync(
+    join(dirname(fileURLToPath(import.meta.url)), "..", "package.json"),
+    { encoding: "utf8" }
+  )
+);
 
 const args = process.argv.slice(2);
 

@@ -1,10 +1,7 @@
 {
-  "files": [
-    "bin/{{name}}-systemd"
-  ],
   "bin": {
-    "{{name}}": "bin/{{name}}",
-    "{{name}}-systemd": "bin/{{name}}-systemd"
+    "{{name}}": "src/{{name}}-cli.mjs",
+    "{{name}}-systemd": "bin/{{name}}-systemd-cli.mjs"
   },
   "keywords": [
     "kronos-integration",
@@ -22,7 +19,7 @@
     "@kronos-integration/service-ldap": "^2.1.21"
   },
   "optionalDependencies": {
-    "@kronos-integration/service-systemd": "^2.2.13"
+    "@kronos-integration/service-systemd": "^2.3.0"
   },
   "os": [
     "linux",
@@ -71,7 +68,6 @@
     "inheritFrom": [
       "arlac77/template-root",
       "arlac77/template-travis",
-      "arlac77/template-rollup",
       "arlac77/template-ava",
       "arlac77/template-documentation",
       "arlac77/template-pacman",
