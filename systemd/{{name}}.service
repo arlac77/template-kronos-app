@@ -28,6 +28,8 @@ FileDescriptorStoreMax=5
 MemoryAccounting=true
 MemoryHigh=150M
 MemoryMax=200M
+CPUWeight=50
+IOWeight=50
 
 OOMPolicy=stop
 
