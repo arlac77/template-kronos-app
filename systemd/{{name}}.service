@@ -17,6 +17,7 @@ SupplementaryGroups=http
 PrivateTmp=true
 PrivateDevices=true
 ProtectClock=true
+ProtectSystem=yes
 NoNewPrivileges=true
 RuntimeDirectory={{name}}
 StateDirectory={{name}}
