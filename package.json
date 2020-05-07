@@ -8,6 +8,8 @@
     "systemd"
   ],
   "scripts": {
+    "lint" : "",
+    "docs" : ""
   },
   "dependencies": {
     "@kronos-integration/service": "^8.3.26",
