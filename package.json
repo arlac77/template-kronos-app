@@ -75,7 +75,7 @@
   "template": {
     "inheritFrom": [
       "arlac77/template-root",
-      "arlac77/template-travis",
+      "arlac77/template-github-action",
       "arlac77/template-ava",
       "arlac77/template-pacman",
       "arlac77/template-nginx",
