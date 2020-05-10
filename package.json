@@ -83,7 +83,7 @@
       "arlac77/template-semantic-release"
     ],
     "usedBy": [
-      "Kronos-Integration/kronos-cluster-node",
+      "Kronos-Integration/cluster-node",
       "arlac77/component-manager",
       "arlac77/entitlement-provider",
       "arlac77/rtsp-archive",
