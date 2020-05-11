@@ -22,6 +22,9 @@
   "optionalDependencies": {
     "@kronos-integration/service-systemd": "^2.3.2"
   },
+  "devDependencies": {
+    "rollup": "--delete--"
+  },
   "os": [
     "linux",
     "darwin"
