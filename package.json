@@ -20,7 +20,7 @@
     "@kronos-integration/service-ldap": "^2.1.24"
   },
   "optionalDependencies": {
-    "@kronos-integration/service-systemd": "^2.3.2"
+    "@kronos-integration/service-systemd": "^2.3.3"
   },
   "devDependencies": {
     "rollup": "--delete--"
