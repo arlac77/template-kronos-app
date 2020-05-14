@@ -21,7 +21,7 @@
     "@kronos-integration/interceptor-decode-json": "^2.1.9"
   },
   "optionalDependencies": {
-    "@kronos-integration/service-systemd": "^2.3.3"
+    "@kronos-integration/service-systemd": "^2.3.4"
   },
   "devDependencies": {
     "rollup": "--delete--"
