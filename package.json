@@ -1,6 +1,6 @@
 {
   "bin": {
-    "{{name}}-systemd": "src/{{name}}-systemd-cli.mjs",
+    "{{name}}-systemd": "--delete--",
     "{{name}}": "src/{{name}}-cli.mjs"
   },
   "keywords": [
