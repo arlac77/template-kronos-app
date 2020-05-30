@@ -20,7 +20,7 @@
     "@kronos-integration/interceptor-decode-json": "^2.1.10"
   },
   "optionalDependencies": {
-    "@kronos-integration/service-systemd": "^2.3.5"
+    "@kronos-integration/service-systemd": "^2.3.6"
   },
   "os": [
     "linux",
