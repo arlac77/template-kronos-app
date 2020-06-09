@@ -39,10 +39,14 @@ IOWeight=50
 
 OOMPolicy=stop
 
+ProtectHostname=true
+PrivateUsers=true
 PrivateDevices=true
 ProtectControlGroups=true
 ProtectHome=true
 ProtectKernelTunables=true
+ProtectKernelLogs=true
+ProtectKernelModules=true
 ProtectSystem=full
 RestrictSUIDSGID=true
 
