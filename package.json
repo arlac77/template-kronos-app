@@ -1,6 +1,6 @@
 {
   "bin": {
-    "{{name}}": "src/{{name}}-cli.mjs"
+    "{{name}}": "./src/{{name}}-cli.mjs"
   },
   "keywords": [
     "kronos-integration",
@@ -11,7 +11,7 @@
     "docs": ""
   },
   "dependencies": {
-    "@kronos-integration/service": "^8.5.12",
+    "@kronos-integration/service": "^8.5.14",
     "@kronos-integration/service-admin": "^3.1.8",
     "@kronos-integration/service-authenticator": "^1.1.0",
     "@kronos-integration/service-health-check": "^5.0.35",
