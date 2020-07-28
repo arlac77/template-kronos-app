@@ -12,11 +12,11 @@
   },
   "dependencies": {
     "@kronos-integration/service": "^9.2.0",
-    "@kronos-integration/service-admin": "^3.1.12",
-    "@kronos-integration/service-authenticator": "^1.1.4",
+    "@kronos-integration/service-admin": "^3.1.13",
+    "@kronos-integration/service-authenticator": "^1.1.5",
     "@kronos-integration/service-health-check": "^5.0.39",
-    "@kronos-integration/service-http": "^10.1.24",
-    "@kronos-integration/service-ldap": "^2.1.41",
+    "@kronos-integration/service-http": "^10.1.25",
+    "@kronos-integration/service-ldap": "^2.1.42",
     "@kronos-integration/interceptor-decode-json": "^2.1.11"
   },
   "optionalDependencies": {
