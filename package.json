@@ -11,7 +11,7 @@
     "docs": ""
   },
   "dependencies": {
-    "@kronos-integration/service": "^9.1.0",
+    "@kronos-integration/service": "^9.2.0",
     "@kronos-integration/service-admin": "^3.1.12",
     "@kronos-integration/service-authenticator": "^1.1.4",
     "@kronos-integration/service-health-check": "^5.0.39",
