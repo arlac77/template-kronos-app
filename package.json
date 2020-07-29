@@ -11,7 +11,7 @@
     "docs": ""
   },
   "dependencies": {
-    "@kronos-integration/service": "^9.2.0",
+    "@kronos-integration/service": "^9.2.1",
     "@kronos-integration/service-admin": "^3.1.13",
     "@kronos-integration/service-authenticator": "^1.1.5",
     "@kronos-integration/service-health-check": "^5.0.40",
@@ -44,7 +44,6 @@
     "hooks": "pacman/hooks.sh",
     "backup": "etc/${name}/config.json",
     "installdir": "/services/${name}",
-    "additional-content": "--delete--",
     "content-provider": {
       "npm-dist": {},
       "npm-dependencies": {},
