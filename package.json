@@ -22,6 +22,9 @@
   "optionalDependencies": {
     "@kronos-integration/service-systemd": "^2.3.10"
   },
+  "engines": {
+    "node": ">=${node_version}"
+  },
   "os": [
     "linux",
     "darwin"
