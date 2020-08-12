@@ -63,7 +63,7 @@
     },
     "depends": {
       "systemd": ">=246.1",
-      "nginx-mainline": ">=1.19.1"
+      "nginx-mainline": ">=1.19.2"
     }
   },
   "release": {
@@ -73,6 +73,7 @@
       [
         "@semantic-release/exec",
         {
+          "verifyConditionsCmd": "which makepkg",
           "publishCmd": "npx npm-pkgbuild --pkgver ${nextRelease.version} --npm-dist --npm-modules pkgbuild pacman makepkg"
         }
       ]
