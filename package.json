@@ -80,6 +80,12 @@
     ]
   },
   "template": {
+    "mergers": [
+      {
+        "type": "Skip",
+        "pattern": ".travis.yml"
+      }
+    ],
     "inheritFrom": [
       "arlac77/template-root",
       "arlac77/template-github-action",
