@@ -7,8 +7,8 @@
     "systemd"
   ],
   "scripts": {
-    "lint": "",
-    "docs": ""
+    "lint": "--delete--",
+    "docs": "--delete--"
   },
   "dependencies": {
     "@kronos-integration/service": "^9.2.7",
@@ -62,7 +62,7 @@
       "/etc/${name}/config.json": "config/config.json"
     },
     "depends": {
-      "systemd": ">=246.1",
+      "systemd": ">=246.2",
       "nginx-mainline": ">=1.19.2"
     }
   },
