@@ -94,7 +94,7 @@
       "arlac77/system-dashboard"
     ],
     "properties": {
-      "node_version": "14.8.0"
+      "node_version": "14.9.0"
     }
   }
 }
