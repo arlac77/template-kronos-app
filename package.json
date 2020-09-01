@@ -48,8 +48,6 @@
     "backup": "etc/${name}/config.json",
     "installdir": "/services/${name}",
     "content-provider": {
-      "npm-dist": {},
-      "npm-dependencies": {},
       "systemd": {
         "units": {
           "${name}": "systemd/${name}*"
