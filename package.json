@@ -74,6 +74,9 @@
     ]
   },
   "template": {
+    "properties": {
+      "node_version": "14.9.0"
+    },
     "inheritFrom": [
       "arlac77/template-root",
       "arlac77/template-github-action",
@@ -90,9 +93,6 @@
       "arlac77/hook-ci",
       "arlac77/rtsp-archive",
       "arlac77/system-dashboard"
-    ],
-    "properties": {
-      "node_version": "14.9.0"
-    }
+    ]
   }
 }
