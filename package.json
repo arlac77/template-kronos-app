@@ -75,7 +75,7 @@
   },
   "template": {
     "properties": {
-      "node_version": "14.10.0"
+      "node_version": "14.10.1"
     },
     "inheritFrom": [
       "arlac77/template-root",
