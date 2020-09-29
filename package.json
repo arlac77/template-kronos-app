@@ -7,8 +7,6 @@
     "systemd"
   ],
   "scripts": {
-    "lint": "--delete--",
-    "docs": "--delete--"
   },
   "dependencies": {
     "@kronos-integration/service": "^9.2.13",
@@ -75,7 +73,6 @@
   },
   "template": {
     "properties": {
-      "node_version": "14.12.0"
     },
     "inheritFrom": [
       "arlac77/template-root",
