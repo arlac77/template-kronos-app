@@ -7,17 +7,15 @@
     "systemd"
   ],
   "scripts": {
-    "lint": "--delete--",
-    "docs": "--delete--"
   },
   "dependencies": {
-    "@kronos-integration/service": "^9.2.13",
-    "@kronos-integration/service-admin": "^3.1.25",
+    "@kronos-integration/service": "^9.2.14",
+    "@kronos-integration/service-admin": "^3.1.26",
     "@kronos-integration/service-authenticator": "^1.2.0",
-    "@kronos-integration/service-health-check": "^5.0.50",
-    "@kronos-integration/service-http": "^10.2.11",
-    "@kronos-integration/service-ldap": "^2.1.55",
-    "@kronos-integration/interceptor-decode-json": "^2.1.21"
+    "@kronos-integration/service-health-check": "^5.0.51",
+    "@kronos-integration/service-http": "^10.2.12",
+    "@kronos-integration/service-ldap": "^2.1.56",
+    "@kronos-integration/interceptor-decode-json": "^2.1.22"
   },
   "optionalDependencies": {
     "@kronos-integration/service-systemd": "^2.3.16"
@@ -75,7 +73,6 @@
   },
   "template": {
     "properties": {
-      "node_version": "14.12.0"
     },
     "inheritFrom": [
       "arlac77/template-root",
