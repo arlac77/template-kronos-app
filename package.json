@@ -75,13 +75,12 @@
     "properties": {
     },
     "inheritFrom": [
+      "arlac77/template-arlac77-github",
       "arlac77/template-root",
-      "arlac77/template-github-action",
       "arlac77/template-ava",
       "arlac77/template-pacman",
       "arlac77/template-nginx",
-      "arlac77/template-systemd",
-      "arlac77/template-semantic-release"
+      "arlac77/template-systemd"
     ],
     "usedBy": [
       "Kronos-Integration/cluster-node",
