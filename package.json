@@ -6,8 +6,7 @@
     "kronos-integration",
     "systemd"
   ],
-  "scripts": {
-  },
+  "scripts": {},
   "dependencies": {
     "@kronos-integration/service": "^9.2.32",
     "@kronos-integration/service-admin": "^3.1.39",
@@ -72,8 +71,7 @@
     ]
   },
   "template": {
-    "properties": {
-    },
+    "properties": {},
     "inheritFrom": [
       "arlac77/template-arlac77-github",
       "arlac77/template-root",
