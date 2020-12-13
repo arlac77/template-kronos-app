@@ -1,4 +1,5 @@
 {
+  "module": "--delete--",
   "bin": {
     "{{name}}": "./src/{{name}}-cli.mjs"
   },
