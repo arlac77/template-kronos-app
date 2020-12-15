@@ -18,7 +18,7 @@
     "@kronos-integration/interceptor-decode-json": "^2.1.35"
   },
   "optionalDependencies": {
-    "@kronos-integration/service-systemd": "^2.4.5"
+    "@kronos-integration/service-systemd": "^2.4.6"
   },
   "engines": {
     "node": ">={{node_version}}"
