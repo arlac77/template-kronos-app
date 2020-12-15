@@ -86,9 +86,9 @@
       "arlac77/component-manager",
       "arlac77/entitlement-provider",
       "arlac77/hook-ci",
-      "arlac77/npm-template-sync-github-hook",
       "arlac77/rtsp-archive",
-      "arlac77/system-dashboard"
+      "arlac77/system-dashboard",
+      "template-tools/template-sync-hook"
     ]
   }
 }
