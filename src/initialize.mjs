@@ -1,3 +1,3 @@
 
-export default async function initialize(serivceProvider) {
+export default async function initialize(sericeProvider) {
 }
