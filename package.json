@@ -11,7 +11,7 @@
     "@kronos-integration/service": "^10.3.5"
   },
   "optionalDependencies": {
-    "@kronos-integration/service-systemd": "^2.4.7"
+    "@kronos-integration/service-systemd": "^2.4.8"
   },
   "engines": {
     "node": ">={{node_version}}"
