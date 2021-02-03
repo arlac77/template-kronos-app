@@ -17,8 +17,7 @@
     "node": ">={{node_version}}"
   },
   "os": [
-    "linux",
-    "--delete-- darwin"
+    "linux"
   ],
   "cpu": [
     "arm",
@@ -55,6 +54,8 @@
     "plugins": [
       "@semantic-release/commit-analyzer",
       "@semantic-release/release-notes-generator",
+      "@semantic-release/npm",
+      "@semantic-release/github"
       [
         "@semantic-release/exec",
         {
