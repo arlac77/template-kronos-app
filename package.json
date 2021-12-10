@@ -8,7 +8,7 @@
   ],
   "scripts": {},
   "dependencies": {
-    "@kronos-integration/service": "^10.4.7"
+    "@kronos-integration/service": "^10.4.11"
   },
   "optionalDependencies": {
     "@kronos-integration/service-systemd": "^2.5.2"
