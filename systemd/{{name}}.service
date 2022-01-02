@@ -49,6 +49,9 @@ ProtectSystem=full
 ProtectProc=noaccess
 ProtectClock=true
 RestrictSUIDSGID=true
+RestrictRealtime=true
+
+CapabilityBoundingSet=~CAP_SYS_BOOT
 
 [Install]
 WantedBy=multi-user.target
