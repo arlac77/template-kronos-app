@@ -13,6 +13,7 @@ TimeoutStartSec=25
 TimeoutStopSec=25
 User={{name}}
 Group={{name}}
+UMask=0077
 SupplementaryGroups=http
 PrivateTmp=true
 LockPersonality=true
