@@ -51,7 +51,7 @@ ProtectClock=true
 RestrictSUIDSGID=true
 RestrictRealtime=true
 
-CapabilityBoundingSet=~CAP_SYS_BOOT CAP_SYS_ADMIN
+CapabilityBoundingSet=~CAP_SYS_BOOT CAP_SYS_ADMIN CAP_SYS_NETWORK CAP_SYS_NICE CAP_SYS_RESOURCE
 
 [Install]
 WantedBy=multi-user.target
