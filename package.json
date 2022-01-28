@@ -78,7 +78,6 @@
     "usedBy": [
       "Kronos-Integration/cluster-node",
       "arlac77/component-manager",
-      "arlac77/entitlement-provider",
       "arlac77/hook-ci",
       "arlac77/rtsp-archive",
       "arlac77/system-dashboard",
