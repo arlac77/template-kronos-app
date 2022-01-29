@@ -80,8 +80,7 @@
       "arlac77/component-manager",
       "arlac77/hook-ci",
       "arlac77/rtsp-archive",
-      "arlac77/system-dashboard",
-      "template-tools/template-sync-hook"
+      "arlac77/system-dashboard"
     ]
   }
 }
