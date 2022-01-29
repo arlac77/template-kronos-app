@@ -62,7 +62,7 @@
       "arlac77/template-ava",
       "arlac77/template-pacman#next",
       "arlac77/template-nginx",
-      "arlac77/template-systemd"
+      "arlac77/template-systemd#next"
     ],
     "usedBy": [
       "arlac77/entitlement-provider",
