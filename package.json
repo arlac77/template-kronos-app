@@ -65,7 +65,8 @@
       "arlac77/template-systemd"
     ],
     "usedBy": [
-      "arlac77/entitlement-provider"
+      "arlac77/entitlement-provider",
+      "template-tools/template-sync-hook"
     ]
   }
 }
