@@ -75,7 +75,12 @@
     ],
     "usedBy": [
       "arlac77/entitlement-provider",
-      "template-tools/template-sync-hook"
+      "template-tools/template-sync-hook",
+      "Kronos-Integration/cluster-node",
+      "arlac77/component-manager",
+      "arlac77/hook-ci",
+      "arlac77/rtsp-archive",
+      "arlac77/system-dashboard"
     ]
   }
 }
