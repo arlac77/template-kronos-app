@@ -8,7 +8,7 @@
   ],
   "scripts": {},
   "dependencies": {
-    "@kronos-integration/service": "^10.4.15"
+    "@kronos-integration/service": "^10.4.17"
   },
   "optionalDependencies": {
     "@kronos-integration/service-systemd": "^2.5.3"
@@ -76,6 +76,11 @@
     "usedBy": [
       "arlac77/entitlement-provider",
       "template-tools/template-sync-hook"
+      "Kronos-Integration/cluster-node",
+      "arlac77/component-manager",
+      "arlac77/hook-ci",
+      "arlac77/rtsp-archive",
+      "arlac77/system-dashboard"
     ]
   }
 }
