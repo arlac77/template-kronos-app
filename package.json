@@ -28,7 +28,7 @@
     "socket": "/run/${name}/http/socket"
   },
   "pkg": {
-    "group": "services",
+    "groups": "services",
     "hooks": "pkg/hooks.sh",
     "backup": "etc/${name}/config.json",
     "installdir": "/services/${name}",
