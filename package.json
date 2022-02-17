@@ -37,7 +37,6 @@
         "base": "systemd"
       },
       "/usr/lib/tmpfiles.d/${name}.conf": "pkg/tmpfiles.conf",
-      "/usr/lib/sysusers.d/${name}.conf": "pkg/sysusers.conf",
       "/etc/${name}/config.json": "config/config.json",
       "${installdir}/": [
         {
