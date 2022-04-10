@@ -25,21 +25,17 @@
     "arm64",
     "x64"
   ],
-  "config": {
-    "socket": "/run/${name}/http/socket"
-  },
   "pkg": {
     "groups": "services",
     "hooks": "pkg/hooks.sh",
-    "backup": "etc/${name}/config.json",
-    "installdir": "/services/${name}",
+    "backup": "${config.dir}config.json",
     "content": {
       "${systemd.unit.dir}": {
         "base": "systemd"
       },
       "${tmpfiles.config.dir}${name}.conf": "pkg/tmpfiles.conf",
-      "/etc/${name}/config.json": "config/config.json",
-      "${installdir}/": [
+      "${config.dir}config.json": "config/config.json",
+      "${install.dir}": [
         {
           "type": "npm-pack"
         },
