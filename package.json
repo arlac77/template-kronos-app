@@ -30,11 +30,6 @@
     "hooks": "pkg/hooks.sh",
     "backup": "${config.dir}config.json",
     "content": {
-      "${systemd.unit.dir}": {
-        "base": "systemd"
-      },
-      "${tmpfiles.config.dir}${name}.conf": "pkg/tmpfiles.conf",
-      "${config.dir}config.json": "config/config.json",
       "${install.dir}": [
         {
           "type": "npm-pack"
@@ -42,7 +37,12 @@
         {
           "type": "node-modules"
         }
-      ]
+      ],
+      "${systemd.unit.dir}": {
+        "base": "systemd"
+      },
+      "${tmpfiles.config.dir}${name}.conf": "pkg/tmpfiles.conf",
+      "${config.dir}config.json": "config/config.json"
     }
   },
   "release": {
