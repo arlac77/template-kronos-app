@@ -26,7 +26,6 @@
     "x64"
   ],
   "pkgbuild": {
-    "groups": "services",
     "hooks": "pkg/hooks.sh",
     "backup": "${config.dir}config.json",
     "content": {
