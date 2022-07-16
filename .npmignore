@@ -7,6 +7,6 @@ doc
 .tmp
 .vscode
 .github
-systemd
 config
+--delete-- systemd
 --delete-- rollup.config.*
