@@ -1,0 +1,6 @@
+jobs:
+  test:
+    strategy:
+      matrix:
+        node-version:
+          - -16
