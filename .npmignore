@@ -6,7 +6,3 @@ doc
 .vscode
 .github
 config
---delete-- .test
---delete-- .tmp
---delete-- systemd
---delete-- rollup.config.*
