@@ -26,8 +26,6 @@
     "x64"
   ],
   "pkgbuild": {
-    "hooks": "pkg/hooks.sh",
-    "backup": "${config.dir}config.json",
     "content": {
       "${install.dir}": [
         {
