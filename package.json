@@ -36,7 +36,6 @@
         }
       ],
       "${systemd.unit.dir}${name}.service": "pkg/${name}.service",
-      "${tmpfiles.config.dir}${name}.conf": "pkg/tmpfiles.conf",
       "${config.dir}config.json": "config/config.json"
     }
   },
