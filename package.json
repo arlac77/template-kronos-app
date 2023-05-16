@@ -41,7 +41,7 @@
   },
   "template": {
     "properties": {
-      "node_version": "18.16.0"
+      "node_version": "20.1.0"
     },
     "inheritFrom": [
       "arlac77/template-arlac77-github",
