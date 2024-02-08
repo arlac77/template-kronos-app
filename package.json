@@ -1,6 +1,6 @@
 {
   "bin": {
-    "{{name}}": "./src/{{name}}-cli.mjs"
+    "{{name}}": "src/{{name}}-cli.mjs"
   },
   "keywords": [
     "kronos-integration",
