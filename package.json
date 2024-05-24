@@ -53,13 +53,14 @@
       "arlac77/template-systemd"
     ],
     "usedBy": [
-      "arlac77/entitlement-provider",
-      "template-tools/template-sync-hook",
       "Kronos-Integration/cluster-node",
       "arlac77/component-manager",
+      "arlac77/csp-record",
+      "arlac77/entitlement-provider",
       "arlac77/hook-ci",
       "arlac77/rtsp-archive",
-      "arlac77/system-dashboard"
+      "arlac77/system-dashboard",
+      "template-tools/template-sync-hook"
     ]
   }
 }
