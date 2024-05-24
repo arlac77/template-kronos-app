@@ -36,7 +36,8 @@
         }
       ],
       "${systemd.unit.dir}${name}.service": "pkg/${name}.service",
-      "${config.dir}config.json": "config/config.json"
+      "${config.dir}config.json": "config/config.json",
+      "kronos": true
     }
   },
   "template": {
