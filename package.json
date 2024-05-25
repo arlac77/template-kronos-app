@@ -18,7 +18,8 @@
     "node": ">={{node_version}}"
   },
   "os": [
-    "linux"
+    "linux",
+    "darwin"
   ],
   "cpu": [
     "arm",
