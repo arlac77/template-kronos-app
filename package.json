@@ -37,8 +37,7 @@
         }
       ],
       "${systemd.unit.dir}${name}.service": "pkg/${name}.service",
-      "${config.dir}config.json": "config/config.json",
-      "kronos": "--delete--"
+      "${config.dir}config.json": "config/config.json"
     },
     "kronos": true
   },
