@@ -45,7 +45,8 @@
       "arlac77/template-ava",
       "arlac77/template-npm-pkgbuild",
       "arlac77/template-nginx",
-      "arlac77/template-systemd"
+      "arlac77/template-systemd",
+      "arlac77/template-javascript"
     ],
     "usedBy": [
       "Kronos-Integration/cluster-node",
