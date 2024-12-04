@@ -14,9 +14,6 @@
     "@kronos-integration/service-systemd": "^2.6.3",
     "mf-hosting": "^2.8.4"
   },
-  "engines": {
-    "node": ">={{node_version}}"
-  },
   "os": [
     "linux",
     "darwin"
@@ -42,9 +39,6 @@
     "kronos": true
   },
   "template": {
-    "properties": {
-      "node_version": "22.11.0"
-    },
     "inheritFrom": [
       "arlac77/template-arlac77-github",
       "arlac77/template-root",
