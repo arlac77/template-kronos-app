@@ -40,6 +40,9 @@
     "properties": {
       "license": {
         "owner": "darlenya & arlac77"
+      },
+      "node": {
+        "version" : "24.1.0"
       }
     },
     "inheritFrom": [
