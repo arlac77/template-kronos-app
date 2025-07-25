@@ -8,7 +8,6 @@
   ],
   "scripts": {},
   "dependencies": {
-    "@kronos-integration/service": "^13.1.3"
   },
   "optionalDependencies": {
     "@kronos-integration/service-systemd": "^3.0.2",
@@ -42,7 +41,7 @@
         "owner": "darlenya & arlac77"
       },
       "node": {
-        "version" : "24.2.0"
+        "version" : "24.4.1"
       }
     },
     "inheritFrom": [
