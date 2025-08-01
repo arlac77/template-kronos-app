@@ -41,7 +41,7 @@
         "owner": "darlenya & arlac77"
       },
       "node": {
-        "version" : "24.4.1"
+        "version" : "24.5.0"
       }
     },
     "inheritFrom": [
