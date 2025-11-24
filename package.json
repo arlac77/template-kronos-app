@@ -7,8 +7,7 @@
     "systemd"
   ],
   "scripts": {},
-  "dependencies": {
-  },
+  "dependencies": {},
   "optionalDependencies": {
     "@kronos-integration/service-systemd": "^4.0.0",
     "mf-hosting": "^2.9.3"
@@ -41,7 +40,7 @@
         "owner": "darlenya & arlac77"
       },
       "node": {
-        "version" : "24.10.0"
+        "version": "24.10.0"
       }
     },
     "inheritFrom": [
@@ -63,5 +62,6 @@
       "arlac77/system-dashboard",
       "template-tools/template-sync-hook"
     ]
-  }
+  },
+  "packageManager": "npm@11.6.3+sha512.4085a763162e0e3acd19a4e9d23ad3aa0978e501ccf947dd7233c12a689ae0bb0190763c4ef12366990056b34eec438903ffed38fde4fbd722a17c2a7407ee92"
 }
