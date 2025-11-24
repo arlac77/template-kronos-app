@@ -10,7 +10,7 @@
   "dependencies": {},
   "optionalDependencies": {
     "@kronos-integration/service-systemd": "^4.0.0",
-    "mf-hosting": "^2.9.3"
+    "mf-hosting": "^2.9.4"
   },
   "os": [
     "linux",
