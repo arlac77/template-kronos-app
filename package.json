@@ -9,7 +9,7 @@
   "scripts": {},
   "dependencies": {},
   "optionalDependencies": {
-    "@kronos-integration/service-systemd": "^4.2.0",
+    "@kronos-integration/service-systemd": "^4.2.1",
     "mf-hosting": "^2.9.5"
   },
   "os": [
