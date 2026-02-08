@@ -6,15 +6,15 @@ Wants=network-online.target
 [Service]
 Type=notify
 EnvironmentFile=-/etc/conf.d/{{name}}
-ExecStart={{node.exe}} --unhandled-rejections=strict --trace-uncaught --trace-warnings --title {{name}} {{install.dir}}src/{{name}}-cli.mjs
+ExecStart={{node.exe}} --unhandled-rejections=strict --trace-uncaught --trace-warnings --title {{name}} {{install_dir}}src/{{name}}-cli.mjs
 ExecReload=/bin/kill -HUP $MAINPID
 RestartSec=10
 Restart=on-failure
 TimeoutStartSec=25
 TimeoutStopSec=25
 DynamicUser=false
-User={{os.user}}
-Group={{os.group}}
+User={{os_user}}
+Group={{os_group}}
 UMask=0077
 SupplementaryGroups=http
 LockPersonality=true
