@@ -9,7 +9,7 @@
   "scripts": {},
   "dependencies": {},
   "optionalDependencies": {
-    "@kronos-integration/service-systemd": "^5.1.0"
+    "@kronos-integration/service-systemd": "^5.1.1"
   },
   "os": [
     "linux",
